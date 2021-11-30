@@ -1,0 +1,64 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" xmlns:pu="http://primefaces.org/ultima"
+	template="/templates/template.xhtml">
+
+<ui:define name="content">
+	<div class="ui-g dashboard">
+		<h:form>
+		<p:messages id="messages" />
+aaaaa
+			<p:dataTable id="tableMstCoa" var="_coa" value="#{mstCoaBean.mstCoaList}"
+				styleClass="takion"
+				widgetVar="wgTableHifivezz" emptyMessage="#{msg.noDataFound}" 
+				filteredValue="#{mstCoaBean.filteredList}" globalFilterFunction="#{mstCoaBean.globalFilterFunction}"
+				selection="#{mstCoaBean.selected}" selectionMode="single"
+				rowKey="#{_coa.coaId}" 
+				sortMode="multiple"
+				resizableColumns="true"
+				 multiViewState="true"
+				liveResize="false" paginator="true" paginatorPosition="bottom" rows="50"
+				paginatorTemplate="{FirstPageLink} {PreviousPageLink} {JumpToPageDropdown} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+				rowsPerPageTemplate="10,25,50">
+
+
+					<f:facet name="header" >   
+		           		 <p:outputPanel styleClass="takion">
+							<h:outputText value="Search all fields:" />
+							<p:inputText id="globalFilter" onkeyup="PF('wgTableHifivezz').filter()" style="width:150px; font-color : black"
+								placeholder="Enter keyword" />
+						</p:outputPanel>
+					
+					</f:facet>
+				
+				<p:column id="colCoaId" headerText="#{msg.coaId}" sortBy="#{_coa.coaId}"  filterBy="#{_coa.coaId}" filterMatchMode="contains" width="30">
+					<h:outputText value="#{_coa.coaId}" />
+				</p:column>
+
+				<p:column id="colCoaNm" headerText="#{msg.coaNm}" sortBy="#{_coa.coaNm}"  filterBy="#{_coa.coaNm}" filterMatchMode="contains"  width="100">
+					<h:outputText value="#{_coa.coaNm}" />
+				</p:column>
+				<p:column id="colUpperCoa" headerText="#{msg.upperCoaId}" sortBy="#{_coa.upperCoaId}"  filterBy="#{_coa.upperCoaId}" filterMatchMode="contains"  width="100">
+					<h:outputText value="#{_coa.upperCoaId}" />
+				</p:column>
+				<p:column id="colDeduct" headerText="#{msg.deductYn}" sortBy="#{_coa.deductYn}"  filterBy="#{_coa.deductYn}" filterMatchMode="contains"  width="100">
+					<h:outputText value="#{_coa.deductYn}" />
+				</p:column>
+				
+				<p:column id="colCreditYn" headerText="#{msg.creditYn}" sortBy="#{_coa.creditYn}"  filterBy="#{_coa.creditYn}" filterMatchMode="contains"  width="100">
+					<h:outputText value="#{_coa.creditYn}" />
+				</p:column>
+				
+				
+				<p:column id="colRemark" headerText="#{msg.creditYn}" sortBy="#{_coa.lastModifiedBy}"  filterBy="#{_coa.lastModifiedBy}" filterMatchMode="contains"  width="100">
+					<h:outputText value="#{_coa.lastModifiedBy}" />
+				</p:column>
+		<f:facet name="paginatorBottomLeft">
+            <p:commandButton value="Clear table state" action="#{mstCoaBean.clearTableState}" update="@form"/>
+        </f:facet>
+				
+			</p:dataTable>
+		</h:form>
+	</div>
+</ui:define>
+</ui:composition>

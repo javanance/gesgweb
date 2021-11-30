@@ -1,0 +1,76 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" xmlns:pu="http://primefaces.org/ultima"
+	template="/templates/template.xhtml">
+
+<ui:define name="content">
+	<div class="ui-g dashboard">
+		<h:form>
+		<p:messages id="messages" />
+aaaaa
+			<p:dataTable id="tableMstRunset" var="_runset" value="#{mstRunsetBean.mstRunsetList}"
+				styleClass="takion"
+				widgetVar="wgTableMstRunset" emptyMessage="#{msg.noDataFound}" 
+				filteredValue="#{mstRunsetBean.filteredList}" globalFilterFunction="#{mstRunsetBean.globalFilterFunction}"
+				selection="#{mstRunsetBean.selected}" selectionMode="single"
+				rowKey="#{_runset.coaId}" 
+				sortMode="multiple"
+				resizableColumns="true"
+				 multiViewState="true"
+				liveResize="false" paginator="true" paginatorPosition="bottom" rows="50"
+				paginatorTemplate="{FirstPageLink} {PreviousPageLink} {JumpToPageDropdown} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+				rowsPerPageTemplate="10,25,50">
+
+
+					<f:facet name="header" >   
+		           		 <p:outputPanel styleClass="takion">
+							<h:outputText value="Search all fields:" />
+							<p:inputText id="globalFilter" onkeyup="PF('wgTableHifivezz').filter()" style="width:150px; font-color : black"
+								placeholder="Enter keyword" />
+						</p:outputPanel>
+					
+					</f:facet>
+				
+				<p:column id="colRunsetId" headerText="#{msg.coaId}" sortBy="#{_runset.runsetId}"  filterBy="#{_runset.runsetId}" filterMatchMode="contains" width="100%">
+					<h:outputText value="#{_runset.runsetId}" />
+				</p:column>
+
+				<p:column id="colCoaId" headerText="#{msg.coaNm}" sortBy="#{_runset.coaId}"  filterBy="#{_runset.coaId}" filterMatchMode="contains"  width="100%">
+					<h:outputText value="#{_runset.coaId}" />
+				</p:column>
+				
+				<p:column headerText="#{msg.deltaGroup}" sortBy="#{_runset.deltaGroup}"  filterBy="#{_runset.deltaGroup}" filterMatchMode="contains"  width="100%">
+					<h:outputText value="#{_runset.deltaGroup}" />
+				</p:column>
+				
+				<p:column headerText="#{msg.deltaGroup}" sortBy="#{_runset.priorDeltaGroup}"  filterBy="#{_runset.priorDeltaGroup}" filterMatchMode="contains"  width="100%">
+					<h:outputText value="#{_runset.priorDeltaGroup}" />
+				</p:column>
+				<p:column headerText="#{msg.deltaGroup}" sortBy="#{_runset.rsDivType}"  filterBy="#{_runset.rsDivType}" filterMatchMode="contains"  width="100%">
+					<h:outputText value="#{_runset.rsDivType}" />
+				</p:column>
+				<p:column headerText="#{msg.deltaGroup}" sortBy="#{_runset.rsDivId}"  filterBy="#{_runset.rsDivId}" filterMatchMode="contains"  width="100%">
+					<h:outputText value="#{_runset.rsDivId}" />
+				</p:column>
+				<p:column headerText="#{msg.deltaGroup}" sortBy="#{_runset.newContYn}"  filterBy="#{_runset.newContYn}" filterMatchMode="contains"  width="100%">
+					<h:outputText value="#{_runset.newContYn}" />
+				</p:column>
+				<p:column headerText="#{msg.deltaGroup}" sortBy="#{_runset.prevYn}"  filterBy="#{_runset.prevYn}" filterMatchMode="contains"  width="100%">
+					<h:outputText value="#{_runset.prevYn}" />
+				</p:column>
+				<p:column headerText="#{msg.deltaGroup}" sortBy="#{_runset.tenorAdjNum}"  filterBy="#{_runset.tenorAdjNum}" filterMatchMode="contains"  width="100%">
+					<h:outputText value="#{_runset.tenorAdjNum}" />
+				</p:column>
+				
+				<p:column id="colRemark" headerText="#{msg.creditYn}" sortBy="#{_runset.lastModifiedBy}"  filterBy="#{_runset.lastModifiedBy}" filterMatchMode="contains"  width="100">
+					<h:outputText value="#{_runset.lastModifiedBy}" />
+				</p:column>
+		<f:facet name="paginatorBottomLeft">
+            <p:commandButton value="Clear table state" action="#{mstRunsetBean.clearTableState}" update="@form"/>
+        </f:facet>
+				
+			</p:dataTable>
+		</h:form>
+	</div>
+</ui:define>
+</ui:composition>

@@ -1,0 +1,15 @@
+@media ( max-width : 1024px) {
+	.layout-wrapper.menu-layout-static .route-bar {
+		margin-left: 0px;
+	}
+	.layout-wrapper.menu-layout-static.layout-menu-static-inactive .route-bar	{
+		margin-left: 0px;
+	}
+	.layout-wrapper.menu-layout-static .route-bar1 {
+		margin-left: 0px;
+	}
+	.layout-wrapper.menu-layout-static.layout-menu-static-inactive .route-bar1
+		{
+		margin-left: 0px;
+	}
+}

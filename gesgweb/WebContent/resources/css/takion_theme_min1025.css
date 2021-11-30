@@ -1,0 +1,22 @@
+@media (min-width: 1025px) {
+  .layout-wrapper.menu-layout-static .route-bar {
+   	z-index: 98;
+    margin-left: 0px; }
+
+  .layout-wrapper.menu-layout-static.layout-menu-static-inactive .route-bar {
+   	z-index: 98;
+    margin-left: 0px; }
+    
+  .layout-wrapper.menu-layout-static .route-bar1 {
+   	z-index: 98;
+    margin-left: 0px; }
+
+  .layout-wrapper.menu-layout-static.layout-menu-static-inactive .route-bar1 {
+   	z-index: 98;
+    margin-left: 0px; }
+    
+  .layout-wrapper .topbar .topbar-right.takion-topbar .topbar-items.topbar-items-visible{
+		background-color: transparent ;
+	}
+}
+	

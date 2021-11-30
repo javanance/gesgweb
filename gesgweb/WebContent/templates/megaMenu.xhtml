@@ -1,0 +1,85 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://xmlns.jcp.org/jsf/facelets" 
+  xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:p="http://primefaces.org/ui" xmlns:pe="http://primefaces.org/ui/extensions" xmlns:o="http://omnifaces.org/ui" xmlns:of="http://omnifaces.org/functions"
+  >
+
+ <h:form id="megaMenuForm"  >
+
+  <p:megaMenu id="layout-megamenu-button" orientation="horizontal" >
+   
+  <!--  <p:submenu id="marketVariableSubmenu" label="aaa" icon="img_markget_variable">
+    <p:column>
+     <p:submenu style="display: none;">
+      <p:menuitem id="menuitem111" value="dasdfas"    />
+     </p:submenu>
+    </p:column>
+   </p:submenu> -->
+
+   <p:submenu id="productSubmenu" label="bbb" icon="img_product">
+    <p:column>
+     <p:submenu label="TV.1" style="display: none;">
+      <p:menuitem id="menuitem211" value="TV.1.1" url="#" />
+      <p:menuitem id="menuitem212"  value="TV.1.2" url="#" />
+     </p:submenu>
+     <p:submenu label="TV.2" style="display: none;">
+      <p:menuitem id="menuitem221" value="TV.2.1" url="#" />
+      <p:menuitem id="menuitem222" value="TV.2.2" url="#" />
+      <p:menuitem id="menuitem223" value="TV.2.3" url="#" />
+     </p:submenu>
+    </p:column>
+
+    <p:column>
+     <p:submenu label="TV.4" style="display: none;">
+      <p:menuitem id="menuitem231" value="TV.4.1" url="#" />
+      <p:menuitem id="menuitem232" value="TV.4.2" url="#" />
+     </p:submenu>
+     <p:submenu label="TV.5" style="display: none;">
+      <p:menuitem id="menuitem241" value="TV.5.1" url="#" />
+      <p:menuitem id="menuitem242" value="TV.5.2" url="#" />
+      <p:menuitem id="menuitem243" value="TV.5.3" url="#" />
+     </p:submenu>
+    </p:column>
+   </p:submenu>
+
+   <p:submenu label="zzz" icon="img_chart_org">
+   <p:column>
+     <p:submenu label="TV.1" style="display: none;">
+      <p:menuitem id="menuitem311" value="TV.1.1" url="#" />
+      <p:menuitem id="menuitem312"  value="TV.1.2" url="#" />
+     </p:submenu>
+     <p:submenu label="TV.2" style="display: none;">
+      <p:menuitem id="menuitem321" value="TV.2.1" url="#" />
+      <p:menuitem id="menuitem322" value="TV.2.2" url="#" />
+      <p:menuitem id="menuitem323" value="TV.2.3" url="#" />
+     </p:submenu>
+    </p:column>
+   </p:submenu>
+
+   <p:submenu label="zzzzzz" icon="img_whatIf">
+
+   </p:submenu>
+
+   <p:submenu label="zzzzzzzz" icon="img_limit">
+
+   </p:submenu>
+
+   
+  <!--  <p:menuitem id="menuitem903" value="#{msg.navigation}" icon="img_setting"  outcome="#{viewUrlBean.getUrl('v902')}" />
+   <p:menuitem id="menuitem905" value="#{msg.indexColumns}" icon="img_setting"  outcome="/fragment/v904DataNavigation"  />
+   <p:menuitem id="menuitem904" value="#{msg.test}" icon="img_setting"  outcome="/fragment/v903DataNavigation"  />
+   <p:menuitem id="menuitem910" value="#{msg.diagram}" icon="img_setting"  outcome="/fragment/v910Diagram"  />
+	 -->
+  <!--  <f:facet name = "options">
+   		<p:menu label="#{msg.settings}" icon="img_limit">
+		   <p:menuitem id="menuitem601" value="#{msg.settings}" icon="img_setting"  outcome="#{viewUrlBean.getRedirectUrl('v800')}"  />
+   		</p:menu>
+   		<p:menuButton value="Options">
+		   <p:menuitem id="menuitem601" value="#{msg.settings}" icon="img_setting"  outcome="#{viewUrlBean.getRedirectUrl('v800')}"  />
+		</p:menuButton>
+   </f:facet> -->
+  </p:megaMenu>
+ </h:form>
+</ui:composition>
+
+
+

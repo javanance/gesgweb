@@ -1,0 +1,47 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" template="/templates/template.xhtml">
+
+	<ui:define name="content">
+		<!-- 		<div class="ui-g" style="padding: 20px 20px;"> -->
+		<div class="ui-g">
+			<div class="ui-g-12 ui-sm-12 ui-md-4 ui-lg-4">
+				<div class="card  card-w-title">
+					<h1>Entry List</h1>
+					<ui:include src="/fragment/entryMst.xhtml" />
+					<p:separator></p:separator>
+				</div>
+				<div class="card card-w-title">
+					<h1>Entry Component</h1>
+					<ui:include src="/fragment/selectedEntrySettleRel.xhtml" />
+				</div>
+			</div>
+
+
+			<div class="ui-g-12 ui-sm-12  ui-md-8 ui-lg-8">
+					<div class="card  card-w-title">
+						<h1>Entry Examples</h1>
+					<p:accordionPanel multiple="true">
+						<p:tab title="Case1">
+							<ui:include src="/fragmentOthers/entryExamplePg.xhtml" />
+								
+						</p:tab>
+						<p:tab title="Case2">
+							sdasdfas
+						</p:tab>
+						<p:tab title="Case3">
+						asdfasdfas
+						</p:tab>
+					
+					</p:accordionPanel>					
+					</div>
+
+					<div class="card  card-w-title">
+					</div>
+					<div class="card  card-w-title">
+						<h3>Case 3</h3>
+							<ui:include src="/fragmentOthers/entryExamplePg.xhtml" />
+					</div>
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>

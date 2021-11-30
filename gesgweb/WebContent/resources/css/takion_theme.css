@@ -1,0 +1,266 @@
+/* .takion.ui-panelgrid  .ui-panelgrid-cell:nth-child(1){
+	padding:0px;
+	border-right: 1px solid #212121;
+	border-top: 0px solid white;
+	border-bottom: 0px solid white;
+	border-left :0px solid #212121 ;
+}
+.takion.ui-panelgrid  .ui-panelgrid-cell{
+	
+}
+*/
+body .ui-datatable.takion .ui-datatable-footer .ui-inputfield {
+  color: #8bc34a;
+}
+
+.ui-panelgrid .ui-panelgrid-cell.takion-left{
+	padding:0px;
+	width: 50%;
+	border-right: 1px solid #212121;
+	border-top: 0px solid white;
+	border-bottom: 0px solid white;
+	border-left :0px solid #212121 ;
+	
+	
+} 
+.ui-panelgrid .ui-panelgrid-cell.takion-right{
+	padding:0px;
+	width: 50%;
+	border : 0px;
+	
+}
+
+.ui-columntoggler .ui-columntoggler-close{
+	display: none;
+}
+
+body.layout-compact .takion-button.ui-button{
+	font-size: 12;
+	height : 24;
+	background-color : white;
+	color : #212121;
+}
+
+body.layout-compact .takion-button.ui-button .ui-button-text{
+	line-height : 20px;
+	
+}
+
+body.layout-compact .takion-button.ui-button.ui-button-text-icon-left .ui-icon{
+		color :#607D8B; 
+}
+
+
+.ui-datatable .takion-table thead th.ui-state-active, .takion-table thead th.ui-state-highlight{
+	background-color : transparent;
+	border-top: 5px solid #8BC34A;
+	color : #212121;
+}
+
+.card.card-w-title.takion-card {
+	height: 100%;
+	margin: 0px;
+}
+.ui-datatable .takion-table .ui-column-resizer::before{
+	content : none;
+}
+
+.ui-datatable .takion-table .ui-sortable-column-icon::before{
+	background: none;
+}
+
+.ui-datatable .takion-table thead th.ui-state-active .ui-inputfield, .takion-table thead th.ui-state-highlight .ui-inputfield{
+/* 		border-color: #bdbdbd; */
+    color: #212121;
+	}
+.ui-datatable .takion-table thead th.ui-state-active .ui-icon{
+	color : #8BC34A;
+}
+	
+.ui-datatable .takion-table thead th.ui-state-active .ui-inputfield.ui-state-focus,
+.ui-datatable .takion-table thead th.ui-state-highlight .ui-inputfield.ui-state-focus{
+		border-width: 0px 0px 2px 0px;
+		border-color :#607D8B;
+		padding-bottom : 0px;
+		
+	}
+/* .takion-table.ui-datatable thead th.ui-state-active, .takion-table.ui-datatable thead th.ui-state-highlight{
+	background-color : transparent;
+	border-top: 3px solid #8BC34A;
+}
+
+.body	.takion-table.ui-datatable thead th.ui-state-active .ui-inputfield, .body .takion-table.ui-datatable thead th.ui-state-highlight .ui-inputfield{
+		border-color :#607D8B;
+		color :#607D8B;
+	}
+.body	.takion-table.ui-datatable thead th.ui-state-active .ui-inputfield.ui-state-focus .ui-inputfield.ui-state-hover,
+.body	.takion-table.ui-datatable thead th.ui-state-highlight .ui-inputfield.ui-state-focus .ui-inputfield.ui-state-hover{
+		border-width: 0px 0px 2px 0px;
+		border-color :#607D8B;
+		padding-bottom : 0px;
+		
+	} */
+
+.ui-layout-unit.takion{
+	padding:10px;
+	background-color: red;
+}
+
+.takion .ui-layout-unit-content{
+	background-color : blue;
+	padding:0px 0px 0px 250px;
+	 -moz-transition: margin-left 0.3s;
+  -o-transition: margin-left 0.3s;
+  -webkit-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;	
+}
+.takion-input .ui-inputfield{
+		text-align: center;
+}
+.takion-tab.ui-tabs.ui-tabs-top .ui-tabs-nav{
+	border: 0px;
+	margin: 0px;
+}
+
+.takion-tab.ui-tabs.ui-tabs-top>.ui-tabs-nav li{
+	top:0px;
+}
+.takion-tab.ui-tabs .ui-tabs-nav > li.ui-state-active a{
+	color : wheat;	
+}
+.takion-tab.ui-tabs .ui-tabs-nav > li > a{
+	width: 95%;
+	text-align: center;
+}
+
+.takion-tab.ui-tabs .ui-tabs-nav > li.ui-state-default{
+	border-bottom: 1px solid #607D8B;	
+	background-color : #607D8B;
+	color : white;
+}
+.takion-tab.ui-tabs .ui-tabs-nav > li.ui-state-default  a{
+	color : grey;
+}
+
+.takion-tab.ui-tabs .ui-tabs-nav > li.ui-state-hover{
+	background-color : #37474F;
+	color : white;
+}
+.takion-tab.ui-tabs .ui-tabs-nav > li.ui-state-active{
+	background-color : #8BC34A; 
+	border-bottom: 1px solid #8BC34A;
+	color : white;	
+}
+.takion-tab.ui-tabs .ui-tabs-nav > li.ui-state-active a{
+	color : white;	
+}
+
+.takion-tab.ui-tabs .ui-tabs-nav > li{
+	background-color : #f7f7f7;
+	border: 1px solid black;
+	color : white;	
+}
+
+
+.takion-tab.ui-tabs .ui-tabs-nav li{
+	width : 50%;
+	margin: 0px;
+	color : white;
+}
+
+
+.logo_g {
+	display: inline-block;
+	vertical-align: middle;
+	width: 250px;
+	height: 75px;
+	background: url("#{resource['ultima-layout:images/greenbay2.png']}") top left no-repeat;
+	background-size: 250px 75px;
+}
+
+body.layout-compact .ui-accordion .ui-accordion-content {
+	padding: 0px;
+	margin-right: 0px;
+}
+
+.takion-icon {
+	font-size: 26px;
+	color: #ffffff;
+	margin-left: 16px;
+}
+
+.takion-icon-text {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.layout-wrapper .topbar-items1>li {
+	float: right;
+	position: relative;
+	margin-left: 20px;
+}
+
+.layout-wrapper.menu-layout-static .route-bar {
+	margin-left: 250px;
+	z-index: 98;
+}
+
+
+.layout-wrapper.menu-layout-static.layout-menu-static-inactive .route-bar {
+	margin-left: 0px;
+	z-index: 98;
+}
+
+.layout-wrapper.menu-layout-static.layout-menu-static-active .route-bar {
+	margin-left: 0;
+	z-index: 98;
+}
+
+
+.layout-wrapper.menu-layout-static  .route-bar {
+	padding: 75px 0px 0px 0px;
+	-moz-transition: margin-left 0.3s;
+	-o-transition: margin-left 0.3s;
+	-webkit-transition: margin-left 0.3s;
+	transition: margin-left 0.3s;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 75px;
+	background-color: white;
+	border-bottom: solid 3px white;
+}
+.layout-wrapper.menu-layout-static  .route-bar1 {
+	padding: 0px 0px 0px 0px;
+	-moz-transition: margin-left 0.3s;
+	-o-transition: margin-left 0.3s;
+	-webkit-transition: margin-left 0.3s;
+	transition: margin-left 0.3s;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 20px;s
+	background-color: #ffffff;
+	border-bottom: solid 1px #d6d7d9;
+}
+
+.layout-wrapper  .route-bar .route-bar-breadcrumb {
+	padding: 6px 12px;
+	display: inline-block;
+}
+
+.layout-wrapper .route-bar .route-bar-breadcrumb i {
+	color: #5b616a;
+	font-size: 18px;
+}
+
+
+.layout-wrapper  .route-bar1 .route-bar-breadcrumb {
+	padding: 6px 12px;
+	display: inline-block;
+}
+
+.layout-wrapper .route-bar1 .route-bar-breadcrumb i {
+	color: #5b616a;
+	font-size: 18px;
+}
